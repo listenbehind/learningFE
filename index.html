@@ -12,22 +12,24 @@
     <title>listebehind的blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/m.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header>
+    <header class="header-navigation" id="header">
         <nav>
-            <div>
-                <a href="/"></a>
+            <div class="logo">
+                <a href="/">舒适</a>
             </div>
             <h2>
                 <span></span>
             </h2>
-            <ul>
+            <ul id="starlist">
                 <li>
                     <a href="index.html">首页</a>
                 </li>
@@ -51,12 +53,12 @@
     </header>
     <article>
         <aside>
-            <div>
-                <div>
+            <div class="l_box" id="stickMe">
+                <div class="about_me">
                     <h2>关于我</h2>
                     <ul>
                         <i>
-                            <img src="images/4.png" alt="">
+                            <img src="images/4.jpg" alt="">
                         </i>
                         <p>
                             <b>胡实</b>，一个前端入门小白，学习html和css基础</p>
@@ -124,13 +126,17 @@
                 </div>
             </div>
         </aside>
-        <div>
+        <div class="r_box">
             <main>
                 <li>
                     <i>
-                        <a href="/"><img src="images/1.jpg" alt=""></a>
+                        <a href="/">
+                            <img src="images/1.jpg" alt="">
+                        </a>
                     </i>
-                    <h3><a href="/">你会遇到什么人</a></h3>
+                    <h3>
+                        <a href="/">你会遇到什么人</a>
+                    </h3>
                     <p>有时候</p>
                 </li>
             </main>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/test-info.css">
+    </head>
+    
+    <body>
+        <section class="info-box">
+            <ul>
+                <li>
+                    <a href="#">tab1</a>
+                </li>
+                <li>
+                    <a href="#">tab2</a>
+                </li>
+                <li>
+                    <a href="#">tab3</a>
+                </li>
+            </ul>
+            <div class="panels">
+                <article class='active-panel'> 
+                    <h2>first tab</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. Vestibulum et orci scelerisque, vulputate tellus quis, lobortis dui. Vivamus varius libero at ipsum mattis efficitur ut nec nisl. Nullam eget tincidunt metus. Donec ultrices, urna maximus consequat aliquet, dui neque eleifend lorem, a auctor libero turpis at sem. Aliquam ut porttitor urna. Nulla facilisi.</p>
+                </article>
+                <article>
+                    <h2>second tab</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. Vestibulum et orci scelerisque, vulputate tellus quis, lobortis dui. Vivamus varius libero at ipsum mattis efficitur ut nec nisl. Nullam eget tincidunt metus. Donec ultrices, urna maximus consequat aliquet, dui neque eleifend lorem, a auctor libero turpis at sem. Aliquam ut porttitor urna. Nulla facilisi.</p>
+                </article>
+                <article>
+                    <h2>third tab</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque turpis nibh, porttitor nec venenatis eu, pulvinar in augue. Vestibulum et orci scelerisque, vulputate tellus quis, lobortis dui. Vivamus varius libero at ipsum mattis efficitur ut nec nisl. Nullam eget tincidunt metus. Donec ultrices, urna maximus consequat aliquet, dui neque eleifend lorem, a auctor libero turpis at sem. Aliquam ut porttitor urna. Nulla facilisi.</p>
+                    <ol>
+                        <li>
+                            dui neque eleifend lorem, a auctor libero turpis at sem.
+                        </li>
+                        <li>
+                            dui neque eleifend lorem, a auctor libero turpis at sem.
+                        </li>
+                        <li>
+                            dui neque eleifend lorem, a auctor libero turpis at sem.
+                        </li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+        
+    </body>
+    <script>
+            var tabs=document.querySelectorAll('.info-box li a')
+            var panels=document.querySelectorAll('.info-box article')
+            for(var i=0;i<tabs.length;i++){
+                var tab=tabs[i];
+                setTabHandler(tab,i);
+            }
+            function setTabHandler(tab,tabPos){
+                tab.onclick=function(){
+                    for(var i=0;i<tabs.length;i++){
+                        tabs[i].className='';
+                    }
+                    tab.className='active'
+                    for(var i=0;i<panels.length;i++){
+                        panels[i].className='';
+                    }
+                    panels[tabPos].className='active-panel';
+                }
+            }
+        </script>
+</html>
