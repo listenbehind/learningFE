@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        #t_box {
+            width: 800px;
+            padding: 10px;
+            border: 5px solid blue;
+            margin: 10px;
+        }
+
+        #b_box {
+            margin-top: 10px;
+            border: 1px solid #000;
+            height: 10px;
+        }
+
+        .sbox {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            border: solid 10px coral;
+            background: lightblue;
+            width: 340px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="t_box">
+        <div class="sbox">Left</div><div class="sbox">Right</div>
+        <div id="b_box"></div>
+    </div>
+</body>
+
+</html>
